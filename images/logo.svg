@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <!-- Inner Civic/Building Motif -->
+  <!-- Roof / Pediment -->
+  <polygon points="50,18 28,34 72,34" fill="#005a9c" />
+  
+  <!-- Pediment Base -->
+  <rect x="28" y="36" width="44" height="4" rx="1" fill="#005a9c" />
+  
+  <!-- Columns -->
+  <rect x="33" y="43" width="6" height="23" rx="2" fill="#005a9c" />
+  <rect x="47" y="43" width="6" height="23" rx="2" fill="#005a9c" />
+  <rect x="61" y="43" width="6" height="23" rx="2" fill="#005a9c" />
+  
+  <!-- Base -->
+  <rect x="26" y="68" width="48" height="5" rx="1.5" fill="#005a9c" />
+  
+  <!-- Outer Minimalist C-Ring Arch -->
+  <path d="M 68,14 A 42,42 0 1,0 68,86" fill="none" stroke="#333333" stroke-width="5.5" stroke-linecap="round" />
+        
+  <!-- Accent Dots on open ends of the C -->
+  <circle cx="68" cy="14" r="3" fill="#005a9c" />
+  <circle cx="68" cy="86" r="3" fill="#005a9c" />
+</svg>

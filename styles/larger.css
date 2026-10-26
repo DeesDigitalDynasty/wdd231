@@ -1,0 +1,33 @@
+@media screen and (min-width: 768px) {
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navigation li a {
+        border-top: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 4px;
+    }
+
+    .card-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

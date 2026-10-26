@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development I - Home</title>
+    <meta name="description" content="WDD 231 course home page for student portfolio, showcasing certificate courses, projects, and web development skills.">
+    <meta name="author" content="Oludayo Oluboyede">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <!-- JavaScript with defer -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+        <img src="images/logo.svg" alt="Chintzy Chamber of Commerce Logo" width="40" height="40" class="site-logo">    
+            <span class="site-name">Oludayo Oluboyede</span>
+        </div>
+        <button id="menu-button" aria-label="Open Navigation Menu">&#9776;</button>
+        <nav id="animate-nav">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber Project</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        
+        <div class="card-grid">
+            <section class="card about-me">
+                <h2>About Me</h2>
+                <p>Hi, I am <strong>Oludayo Oluboyede</strong>. I build things for the web and study software engineering. Outside of tech, I am a hardcore car enthusiast who spends plenty of time wrenching on vehicles. My dog Finn is always around to supervise my coding sessions and help me take necessary breaks from the screen. This site tracks my progress through the Web and Computer Programming certificate.</p>
+            </section>
+
+            <section class="card student-photo">
+                <h2>Student Photo</h2>
+                <div class="photo-container">
+                    <img src="images/profile.webp" alt="Student Portrait" loading="lazy" width="300" height="300">
+                </div>
+            </section>
+        </div>
+
+        <section class="card certificate-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-btn" class="filter-btn active" data-filter="all">All</button>
+                <button id="cse-btn" class="filter-btn" data-filter="cse">CSE</button>
+                <button id="wdd-btn" class="filter-btn" data-filter="wdd">WDD</button>
+            </div>
+            
+            <div id="course-container" class="course-grid">
+                
+            </div>
+            
+            <p id="credit-display" class="credit-text">The total credits for courses listed above is <span id="total-credits">0</span></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+    <a href="https://www.linkedin.com/in/oludayo-oluboyede-27a086215/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <img src="images/linkedin.svg" alt="" width="24" height="24">
+    </a>
+    <a href="https://github.com/DeesDigitalDynasty/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <img src="images/github.svg" alt="" width="24" height="24">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+        <img src="images/x.svg" alt="" width="24" height="24">
+    </a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Oludayo Oluboyede • Oyo State, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
