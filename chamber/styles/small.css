@@ -256,13 +256,7 @@ main {
     box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
-#member-container.grid .member-img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
+
 
 #member-container.grid h3 {
     font-size: 1.25rem;

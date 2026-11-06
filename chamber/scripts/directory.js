@@ -1,3 +1,4 @@
+// 
 const url = "data/members.json";
 const memberContainer = document.querySelector("#member-container");
 const gridButton = document.querySelector("#grid");
@@ -19,16 +20,17 @@ const getMembers = async () => {
 
 // Function to render members
 const displayMembers = (members) => {
-    memberContainer.innerHTML = ""; // Clear content
+    memberContainer.innerHTML = ""; 
 
-    members.forEach((member) => {
+    members.forEach((member, index) => {
         let card = document.createElement("section");
         card.classList.add("member-card");
 
-        const isFirst = index === 0;
-        
+        // Set high priority for the first image (LCP optimization), lazy for the rest
+        const loadingAttr = index === 0 ? 'fetchpriority="high"' : 'loading="lazy"';
+
         card.innerHTML = `
-            <img src="${member.image}" alt="${member.representative}" width="300" height="180" class="member-img">
+            <img src="${member.image}" alt="${member.representative}" width="300" height="180" class="member-img" ${loadingAttr}>
             <h3>${member.name}</h3>
             <p class="rep-info"><strong>Representative:</strong> ${member.representative} (${member.role})</p>
             <p><strong>Address:</strong> ${member.address}</p>
@@ -42,7 +44,7 @@ const displayMembers = (members) => {
     });
 };
 
-// Event Listeners Grid / List Toggles
+// Event Listeners for Grid / List Toggles
 gridButton.addEventListener("click", () => {
     memberContainer.classList.add("grid");
     memberContainer.classList.remove("list");
@@ -57,5 +59,5 @@ listButton.addEventListener("click", () => {
     gridButton.classList.remove("active");
 });
 
-// Initialize fetch
+// Initialize fetch on page load
 getMembers();
