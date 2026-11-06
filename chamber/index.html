@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibadan Chamber of Commerce - Home</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/ibadan-chamber-favicon.ico">
+
+    <!-- Primary Meta Tags -->
+    <meta name="description" content="The premier digital hub for businesses, corporate growth, and economic development in Ibadan, Oyo State. Explore directories, events, and membership benefits.">
+    <meta name="author" content="Oludayo Oluboyede">
+
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Ibadan Chamber of Commerce - Empowering Regional Business">
+    <meta property="og:description" content="The premier digital hub for businesses, corporate growth, and economic development in Ibadan, Oyo State. Explore directories, events, and membership benefits.">
+    <meta property="og:image" content="https://deesdigitaldynasty.github.io/wdd231/images/ibadan-hero-og.webp">
+    <meta property="og:url" content="https://deesdigitaldynasty.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <!-- X (Twitter) Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ibadan Chamber of Commerce - Empowering Regional Business">
+    <meta name="twitter:description" content="The premier digital hub for businesses, corporate growth, and economic development in Ibadan, Oyo State. Explore directories, events, and membership benefits.">
+    <meta name="twitter:image" content="https://deesdigitaldynasty.github.io/wdd231/images/ibadan-hero-og.webp">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript with defer -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <!-- Using your custom civic motif icon -->
+            <img src="../images/ibcc.png" alt="Ibadan Chamber of Commerce Logo" width="80" height="80" class="site-logo">
+            <span class="site-name">Ibadan Chamber</span>
+        </div>
+        <button id="menu-button" aria-label="Open Navigation Menu">&#9776;</button>
+        <nav id="animate-nav">
+            <ul class="navigation">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Ibadan Chamber of Commerce</h1>
+                <p>Driving commerce, industrial innovation, and sustainable economic growth across Oyo State.</p>
+                <a href="join.html" class="cta-button">Become a Member</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+            <section class="card events">
+                <h2>Upcoming Events & Seminars</h2>
+                <ul>
+                    <li><strong>Annual SME Trade Fair:</strong> Nov 15, 2026 - Dugbe Commercial Center</li>
+                    <li><strong>Agribusiness Export Workshop:</strong> Dec 02, 2026 - Bodija Hub</li>
+                </ul>
+            </section>
+
+            <section class="card weather">
+                <h2>Current Weather</h2>
+                <div class="weather-widget">
+                    <p><strong>Ibadan, NG</strong></p>
+                    <p><span id="current-temp">31</span>&deg;C - Partly Cloudy</p>
+                </div>
+            </section>
+
+            <section class="card spotlight">
+                <h2>Business Spotlight</h2>
+                <div class="spotlight-content">
+                    <h3>Cocoa House Corporate Suites</h3>
+                    <p>Leading commercial infrastructure provider supporting financial institutions and tech startups in the heart of Dugbe.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Ibadan Chamber of Commerce</h3>
+            <p>Dugbe Commercial District</p>
+            <p>Ibadan, Oyo State, Nigeria</p>
+            <p>info@ibadancc.org | +234 800 555 1234</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="../images/linkedin.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="../images/github.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="../images/twitter.svg" alt="" width="24" height="24">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Oludayo Oluboyede • Ibadan Chamber of Commerce Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

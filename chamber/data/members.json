@@ -1,0 +1,81 @@
+{
+  "members": [
+    {
+      "name": "Cocoa House Corporate Center",
+      "representative": "Chief Adebayo Ojo",
+      "role": "Managing Director",
+      "address": "Dugbe Commercial District, Ibadan",
+      "phone": "+234 802 123 4567",
+      "email": "contact@cocoahouseibadan.ng",
+      "website": "https://cocoahouseibadan.ng",
+      "image": "images/chief_adebayo.webp",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Bodija Tech & Innovation Hub",
+      "representative": "Dr. Folake Johnson",
+      "role": "Lead Executive Officer",
+      "address": "Bodija Housing Estate, Ibadan",
+      "phone": "+234 803 987 6543",
+      "email": "info@bodijatech.ng",
+      "website": "https://bodijatech.ng",
+      "image": "images/dr_folake.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Gbagi Apex Textile Merchants",
+      "representative": "Alhaji Ibrahim Gbagi",
+      "role": "Association President",
+      "address": "Gbagi International Market, Ibadan",
+      "phone": "+234 805 111 2233",
+      "email": "support@gbagitextiles.ng",
+      "website": "https://gbagitextiles.ng",
+      "image": "images/alhaji_Ibrahim.webp",
+      "membershipLevel": "Non-Profit"
+    },
+    {
+      "name": "Agodi Gardens & Leisure Resort",
+      "representative": "Mrs. Titilayo Adeleke",
+      "role": "Operations Director",
+      "address": "Parliament Road, Old Bodija, Ibadan",
+      "phone": "+234 807 444 5566",
+      "email": "admin@agodigardens.ng",
+      "website": "https://agodigardens.ng",
+      "image": "images/mrs_titilayo.webp",
+      "membershipLevel": "Silver"
+    },
+    {
+      "name": "Mapo Heritage & Civic Services",
+      "representative": "Hon. Olumide Bankole",
+      "role": "Public Relations Lead",
+      "address": "Mapo Hill, Ibadan",
+      "phone": "+234 801 333 7788",
+      "email": "contact@mapohall.ng",
+      "website": "https://mapohall.ng",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80",
+      "membershipLevel": "Gold"
+    },
+    {
+      "name": "Iwo Road Logistics & Transport Union",
+      "representative": "Mr. Emeka Okafor",
+      "role": "Logistics Coordinator",
+      "address": "Iwo Road Interchange, Ibadan",
+      "phone": "+234 809 222 9900",
+      "email": "ops@iworoadlogistics.ng",
+      "website": "https://iworoadlogistics.ng",
+      "image": "images/mr_emeka.webp",
+      "membershipLevel": "Non-Profit"
+    },
+    {
+      "name": "Ring Road Financial Exchange",
+      "representative": "Ms. Zainab Bello",
+      "role": "Chief Financial Officer",
+      "address": "Ring Road, Ibadan",
+      "phone": "+234 806 777 8899",
+      "email": "zainab@ringroadfinance.ng",
+      "website": "https://ringroadfinance.ng",
+      "image": "images/zainab.webp",
+      "membershipLevel": "Gold"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+@media only screen and (min-width: 48rem) {
+
+    header {
+        padding: 1rem 2rem;
+    }
+
+    /* Disable Hamburger on Desktop */
+    #menu-button {
+        display: none;
+    }
+
+    /* Horizontal Desktop Navigation */
+    nav {
+        display: block;
+        position: static;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .navigation li a {
+        border-top: none;
+        padding: 0.5rem 0.75rem;
+        border-radius: 4px;
+    }
+
+    .navigation li a:hover,
+    .navigation li a.active {
+        background-color: var(--secondary-color);
+    }
+
+    /* Hero Scaling */
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    
+    .home-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer Layout */
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        text-align: left;
+        padding: 2.5rem 2rem;
+    }
+
+    .footer-col {
+        margin-bottom: 0;
+    }
+
+    .social-links {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .footer-bottom {
+        text-align: right;
+    }
+}
+
+
+@media only screen and (min-width: 48rem) {
+    #member-container.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

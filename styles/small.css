@@ -238,3 +238,185 @@ footer {
     transform: scale(1.1);
     opacity: 0.8;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Toggle Button Container */
+.menu-select {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.menu-select button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.menu-select button:hover {
+    background-color: #144f3b;
+    transform: translateY(-1px);
+}
+
+.menu-select button.active {
+    background-color: var(--secondary-color);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* --- GRID VIEW (Default) --- */
+#member-container.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+#member-container.grid .member-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e2ded8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+#member-container.grid .member-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+#member-container.grid .member-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+#member-container.grid h3 {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+#member-container.grid .tagline {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+#member-container.grid p {
+    font-size: 0.9rem;
+    margin: 0.25rem 0;
+    color: var(--text-color);
+}
+
+#member-container.grid .membership {
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0.5rem 0;
+}
+
+#member-container.grid a {
+    display: inline-block;
+    margin-top: 0.75rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+#member-container.grid a:hover {
+    background-color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* --- LIST VIEW --- */
+#member-container.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#member-container.list .member-card {
+    background-color: var(--card-bg);
+    border: 1px solid #e2ded8;
+    border-radius: 6px;
+    padding: 1rem 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    text-align: left;
+}
+
+/* Rubric Requirement: Hide images in List View */
+#member-container.list .member-img {
+    display: none;
+}
+
+#member-container.list h3 {
+    font-size: 1.05rem;
+    color: var(--primary-color);
+    flex: 2;
+    margin: 0;
+}
+
+#member-container.list .tagline {
+    display: none; /* Hide tagline in list view to keep it compact like a table */
+}
+
+#member-container.list p {
+    flex: 2;
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--text-color);
+}
+
+#member-container.list .membership {
+    flex: 1;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
+#member-container.list a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+#member-container.list a:hover {
+    color: var(--secondary-color);
+}
