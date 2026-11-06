@@ -25,9 +25,10 @@ const displayMembers = (members) => {
         let card = document.createElement("section");
         card.classList.add("member-card");
 
+        const isFirst = index === 0;
         
         card.innerHTML = `
-            <img src="${member.image}" alt="${member.representative}" loading="lazy" width="250" height="150" class="member-img">
+            <img src="${member.image}" alt="${member.representative}" width="300" height="180" class="member-img">
             <h3>${member.name}</h3>
             <p class="rep-info"><strong>Representative:</strong> ${member.representative} (${member.role})</p>
             <p><strong>Address:</strong> ${member.address}</p>
