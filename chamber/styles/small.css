@@ -412,7 +412,7 @@ footer {
 }
 
 
-#member-container {
+/* #member-container {
     min-height: 800px; 
     width: 100%;
 }
@@ -424,16 +424,14 @@ footer {
     border-radius: 6px;
     margin-bottom: 1rem;
     background-color: var(--bg-color);
-}
+} */
 
 
-
-
-/* --- Hero Section Styling --- */
+/* --- Hero Section Styling (Clean Single Source) --- */
 .hero {
     background: linear-gradient(rgba(14, 59, 44, 0.88), rgba(14, 59, 44, 0.88)), 
                 url('../images/hero-bg.webp') center/cover no-repeat;
-    color: var(--bg-color);
+    color: var(--white); 
     padding: 4rem 1.5rem;
     text-align: center;
     border-radius: 8px;
@@ -444,7 +442,7 @@ footer {
 .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
-    color: var(--bg-color);
+    color: var(--white); 
 }
 
 .hero-content p {
@@ -453,12 +451,13 @@ footer {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
+    color: var(--white);
 }
 
 .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--bg-color);
+    color: var(--white);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
