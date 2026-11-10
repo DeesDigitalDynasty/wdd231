@@ -426,3 +426,46 @@ footer {
     background-color: var(--bg-color);
 }
 
+
+
+
+/* --- Hero Section Styling --- */
+.hero {
+    background: linear-gradient(rgba(14, 59, 44, 0.88), rgba(14, 59, 44, 0.88)), 
+                url('../images/hero-bg.webp') center/cover no-repeat;
+    color: var(--bg-color);
+    padding: 4rem 1.5rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: var(--bg-color);
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.75rem;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2e7d32;
+}
