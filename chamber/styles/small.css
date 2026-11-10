@@ -401,7 +401,6 @@ footer {
 .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
-    color: var(--white); 
 }
 
 .hero-content p {
@@ -410,7 +409,6 @@ footer {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    color: var(--white);
 }
 
 .cta-button {
