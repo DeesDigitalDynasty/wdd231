@@ -67,7 +67,7 @@
 
 
 
-const url = "../data/members.json";
+const url = "./data/members.json";
 const memberContainer = document.querySelector("#member-container");
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
