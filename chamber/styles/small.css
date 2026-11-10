@@ -441,7 +441,7 @@ footer {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.hero-content h1 {
+/* .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
     color: var(--bg-color);
@@ -453,9 +453,9 @@ footer {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
-.cta-button {
+/* .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
     color: var(--bg-color);
@@ -468,4 +468,4 @@ footer {
 
 .cta-button:hover {
     background-color: #2e7d32;
-}
+} */
