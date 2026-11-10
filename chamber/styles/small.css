@@ -106,7 +106,7 @@ nav.open {
 
 .navigation li a:hover,
 .navigation li a.active {
-    background-color: #1b5e43;
+    background-color: var(--primary-color);
     color: var(--white);
 }
 
@@ -157,7 +157,7 @@ main {
 }
 
 .cta-button:hover {
-    background-color: #333333;
+    background-color: var(--text-color);
     transform: translateY(-2px);
 }
 
@@ -170,7 +170,7 @@ main {
 
 .card {
     background-color: var(--card-bg);
-    border: 1px solid #e2ded8;
+    border: 1px solid var(--white);
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
@@ -190,7 +190,7 @@ main {
 
 .events li {
     padding: 0.6rem 0;
-    border-bottom: 1px solid #f0eee6;
+    border-bottom: 1px solid var(--white);
     font-size: 0.95rem;
 }
 
@@ -220,7 +220,7 @@ main {
 }
 
 .menu-select button:hover {
-    background-color: #1b5e43;
+    background-color: var(--primary-color);
     transform: translateY(-1px);
 }
 
@@ -240,7 +240,7 @@ main {
 
 #member-container.grid .member-card {
     background-color: var(--card-bg);
-    border: 1px solid #e2ded8;
+    border: 1px solid var(--white);
     border-radius: 10px;
     padding: 1.5rem;
     text-align: center;
@@ -274,7 +274,7 @@ main {
 #member-container.grid .membership {
     font-weight: 700;
     color: #222222;
-    background-color: #f0eee6;
+    background-color: var(--bg-color);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     margin: 0.5rem 0;
@@ -294,7 +294,7 @@ main {
 }
 
 #member-container.grid a:hover {
-    background-color: #1b5e43;
+    background-color: var(--primary-color);
 }
 
 
@@ -307,7 +307,7 @@ main {
 
 #member-container.list .member-card {
     background-color: var(--card-bg);
-    border: 1px solid #e2ded8;
+    border: 1px solid var(--white);
     border-radius: 6px;
     padding: 1rem 1.25rem;
     display: flex;
@@ -339,8 +339,8 @@ main {
 #member-container.list .membership {
     flex: 0 1 100px;
     font-weight: 700;
-    color: #222222;
-    background-color: #f0eee6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
     padding: 0.1rem 0.4rem;
     border-radius: 4px;
     margin: 0;
@@ -357,7 +357,7 @@ main {
 }
 
 #member-container.list a:hover {
-    color: #1b5e43;
+    color: var(--primary-color);
 }
 
 /* Footer Styling */
@@ -397,7 +397,7 @@ footer {
 }
 
 .social-links a:hover {
-    background-color: #1b5e43;
+    background-color: var(--primary-color);
 }
 
 .social-links img {
@@ -423,6 +423,6 @@ footer {
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 1rem;
-    background-color: #e2ded8;
+    background-color: var(--bg-color);
 }
 
