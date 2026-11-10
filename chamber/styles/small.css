@@ -100,7 +100,7 @@ nav.open {
     text-decoration: none;
     padding: 1rem 1.25rem;
     font-weight: 500;
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
     transition: background-color 0.2s ease;
 }
 
@@ -119,6 +119,47 @@ main {
     margin: 0 auto;
 }
 
+.hero {
+    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85)), url('../images/ibadan-hero-og.webp') center/cover no-repeat;
+    color: var(--white);
+    padding: 3.5rem 1.5rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-content h1 {
+    font-size: 1.85rem;
+    margin-bottom: 0.75rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+.cta-button:hover {
+    background-color: var(--text-color);
+    transform: translateY(-2px);
+}
 
 /* Home Grid Cards */
 .home-grid {
@@ -351,7 +392,7 @@ footer {
     justify-content: center;
     padding: 0.4rem;
     border-radius: 50%;
-    background-color: var(--text-color);
+    background-color: rgba(255, 255, 255, 0.1);
     transition: background-color 0.2s ease;
 }
 
@@ -371,7 +412,7 @@ footer {
 }
 
 
-/* #member-container {
+#member-container {
     min-height: 800px; 
     width: 100%;
 }
@@ -383,14 +424,16 @@ footer {
     border-radius: 6px;
     margin-bottom: 1rem;
     background-color: var(--bg-color);
-} */
+}
 
 
-/* --- Hero Section Styling (Clean Single Source) --- */
+
+
+/* --- Hero Section Styling --- */
 .hero {
     background: linear-gradient(rgba(14, 59, 44, 0.88), rgba(14, 59, 44, 0.88)), 
                 url('../images/hero-bg.webp') center/cover no-repeat;
-    color: var(--white); 
+    color: var(--bg-color);
     padding: 4rem 1.5rem;
     text-align: center;
     border-radius: 8px;
@@ -401,6 +444,7 @@ footer {
 .hero-content h1 {
     font-size: 2rem;
     margin-bottom: 0.75rem;
+    color: var(--bg-color);
 }
 
 .hero-content p {
@@ -414,7 +458,7 @@ footer {
 .cta-button {
     display: inline-block;
     background-color: var(--secondary-color);
-    color: var(--white);
+    color: var(--bg-color);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     text-decoration: none;
