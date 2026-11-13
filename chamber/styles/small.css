@@ -125,33 +125,11 @@ main {
     font-size: 1.85rem;
     margin-bottom: 0.75rem;
     font-weight: 700;
-}
-
-.hero-content p {
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.95;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: var(--secondary-color);
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
     color: var(--white);
-    padding: 0.75rem 1.75rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
 }
 
-.cta-button:hover {
-    background-color: var(--text-color);
-    transform: translateY(-2px);
-}
 
 /* Home Grid Cards */
 .home-grid {
@@ -453,17 +431,18 @@ footer {
     padding: 1.5rem;
 }
 
-.hero-content h1 {
-    font-size: 1.6rem;
-    margin-bottom: 0.5rem;
-    color: var(--white);
-}
-
 .hero-content p {
     font-size: 0.95rem;
     margin-bottom: 1.25rem;
     max-width: 550px;
     color: var(--white);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+
 }
 
 .cta-button {
