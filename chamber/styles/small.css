@@ -1,11 +1,14 @@
 :root {
-    --primary-color: #0e3b2c;
-    --secondary-color: #1a1a1a; 
-    --bg-color: #f9f8f6;
-    --card-bg: #ffffff;
-    --text-color: #222222;
+    --primary: #0e3b2c;
+    --secondary: #1a1a1a;
+    --bg: #f9f8f6;
+    --card: #ffffff;
+    --text: #222222;
     --white: #ffffff;
-    --font-stack: 'Roboto', sans-serif;
+    --border: #e2ded8;
+    --shadow: rgba(0, 0, 0, 0.08);
+    --overlay: rgba(14, 59, 44, 0.85);
+    --font: 'Roboto', sans-serif;
 }
 
 * {
@@ -15,9 +18,9 @@
 }
 
 body {
-    font-family: var(--font-stack);
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
     line-height: 1.6;
     display: flex;
     flex-direction: column;
@@ -26,14 +29,13 @@ body {
 
 /* Header & Navigation */
 header {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 1.25rem;
     position: relative;
-    box-shadow: 0 2px 8px rgba(14, 59, 44, 0.15);
 }
 
 .logo-box {
@@ -49,13 +51,11 @@ header {
     background-color: var(--white);
     padding: 3px;
     border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
 }
 
 .site-name {
     font-weight: 700;
     font-size: 1.2rem;
-    letter-spacing: 0.5px;
     color: var(--white);
 }
 
@@ -65,11 +65,6 @@ header {
     color: var(--white);
     font-size: 1.8rem;
     cursor: pointer;
-    padding: 0.25rem 0.5rem;
-}
-
-#menu-button:focus-visible {
-    outline: 2px solid var(--white);
 }
 
 nav {
@@ -78,8 +73,7 @@ nav {
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: var(--primary-color);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    background-color: var(--primary);
     z-index: 100;
 }
 
@@ -98,18 +92,15 @@ nav.open {
     color: var(--white);
     text-decoration: none;
     padding: 1rem 1.25rem;
-    font-weight: 500;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    transition: background-color 0.2s ease;
+    border-top: 1px solid var(--overlay);
 }
 
 .navigation li a:hover,
 .navigation li a.active {
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--primary);
 }
 
-/* Main Layout & Hero */
+/* Main & Hero */
 main {
     flex: 1;
     padding: 1.25rem;
@@ -120,11 +111,9 @@ main {
 
 .hero {
     position: relative;
-    width: 100%;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .hero-img {
@@ -138,7 +127,7 @@ main {
 .hero-content {
     position: absolute;
     inset: 0;
-    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85));
+    background: var(--overlay);
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -152,7 +141,6 @@ main {
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--white);
 }
 
 .hero-content p {
@@ -160,25 +148,19 @@ main {
     max-width: 600px;
     margin: 0 auto 1.5rem auto;
     opacity: 0.95;
-    color: var(--white);
 }
 
 .cta-button {
     display: inline-block;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary);
     color: var(--white);
     padding: 0.6rem 1.4rem;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 700;
-    transition: background-color 0.2s ease;
 }
 
-.cta-button:hover {
-    background-color: #2e7d32;
-}
-
-/* Home Grid & Cards */
+/* Cards & Home Grid */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -186,36 +168,30 @@ main {
 }
 
 .card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--white);
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1.5rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .card h2 {
     font-size: 1.25rem;
-    color: var(--primary-color);
+    color: var(--primary);
     margin-bottom: 1rem;
-    border-bottom: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary);
     padding-bottom: 0.35rem;
 }
 
 .events ul {
-    list-style-type: none;
+    list-style: none;
 }
 
 .events li {
     padding: 0.6rem 0;
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--border);
     font-size: 0.95rem;
 }
 
-.events li:last-child {
-    border-bottom: none;
-}
-
-/* Weather & Forecast */
 .weather-temp {
     font-size: 1.2rem;
     font-weight: 700;
@@ -226,21 +202,19 @@ main {
     list-style: none;
     margin-top: 0.75rem;
     padding-top: 0.5rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--border);
 }
 
 .forecast-list li {
     display: flex;
     justify-content: space-between;
     padding: 0.25rem 0;
-    font-size: 0.9rem;
 }
 
-/* Spotlight Items */
 .spotlight-item {
     margin-top: 1rem;
     padding-top: 0.75rem;
-    border-top: 1px dashed #ccc;
+    border-top: 1px dashed var(--border);
     text-align: center;
 }
 
@@ -253,32 +227,26 @@ main {
 
 .spotlight-item h3 {
     font-size: 1rem;
-    color: var(--primary-color);
-}
-
-.spotlight-item p {
-    font-size: 0.85rem;
-    margin: 0.2rem 0;
+    color: var(--primary);
 }
 
 .spotlight-item a {
     display: inline-block;
     margin-top: 0.3rem;
-    font-size: 0.85rem;
-    color: var(--primary-color);
+    color: var(--primary);
     font-weight: 700;
 }
 
-/* Directory Member Container & Controls */
+/* Directory & Controls */
 .menu-select {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 1.5rem 0 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .menu-select button {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white);
     border: none;
     padding: 0.6rem 1.5rem;
@@ -286,17 +254,10 @@ main {
     font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.menu-select button:hover {
-    transform: translateY(-1px);
 }
 
 .menu-select button.active {
-    background-color: #1a1a1a;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
+    background-color: var(--secondary);
 }
 
 #member-container {
@@ -304,30 +265,25 @@ main {
     width: 100%;
 }
 
-/* Grid View */
 #member-container.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
 }
 
-#member-container.grid .member-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--white);
+#member-container.grid .member-card,
+#member-container.list .member-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
     border-radius: 10px;
     padding: 1.5rem;
+}
+
+#member-container.grid .member-card {
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 420px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-#member-container.grid .member-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
 #member-container.grid .member-img {
@@ -336,48 +292,30 @@ main {
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 1rem;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
 }
 
-#member-container.grid h3 {
-    font-size: 1.25rem;
-    color: var(--primary-color);
+#member-container.grid h3,
+#member-container.list h3 {
+    color: var(--primary);
     margin-bottom: 0.5rem;
-}
-
-#member-container.grid p {
-    font-size: 0.9rem;
-    margin: 0.3rem 0;
-    color: var(--text-color);
 }
 
 #member-container.grid .membership {
     font-weight: 700;
-    color: #222222;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
     padding: 0.2rem 0.6rem;
     border-radius: 4px;
     margin: 0.5rem 0;
 }
 
-#member-container.grid a {
-    display: inline-block;
-    margin-top: 0.75rem;
-    background-color: var(--primary-color);
-    color: var(--white);
-    padding: 0.5rem 1.25rem;
-    border-radius: 4px;
+#member-container.grid a,
+#member-container.list a {
+    color: var(--primary);
     text-decoration: none;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
+    font-weight: 700;
 }
 
-#member-container.grid a:hover {
-    background-color: var(--primary-color);
-}
-
-/* List View */
 #member-container.list {
     display: flex;
     flex-direction: column;
@@ -385,77 +323,27 @@ main {
 }
 
 #member-container.list .member-card {
-    background-color: var(--card-bg);
-    border: 1px solid var(--white);
-    border-radius: 6px;
-    padding: 1rem 1.25rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.03);
-    text-align: left;
+    padding: 1rem 1.25rem;
 }
 
 #member-container.list .member-img {
     display: none;
 }
 
-#member-container.list h3 {
-    font-size: 1.1rem;
-    color: var(--primary-color);
-    flex: 2 1 200px;
-    margin: 0;
-}
-
-#member-container.list p {
-    flex: 1 1 150px;
-    font-size: 0.85rem;
-    margin: 0;
-    color: var(--text-color);
-}
-
-#member-container.list .membership {
-    flex: 0 1 100px;
-    font-weight: 700;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    padding: 0.1rem 0.4rem;
-    border-radius: 4px;
-    margin: 0;
-    text-align: center;
-}
-
-#member-container.list a {
-    color: var(--primary-color);
-    text-decoration: underline;
-    background: none;
-    padding: 0;
-    margin: 0;
-    font-weight: 700;
-}
-
-#member-container.list a:hover {
-    color: var(--primary-color);
-}
-
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--primary);
     color: var(--white);
     text-align: center;
     padding: 2.5rem 1rem;
     margin-top: 2.5rem;
-    font-size: 0.9rem;
-}
-
-.footer-col {
-    margin-bottom: 1.5rem;
 }
 
 .footer-col h3 {
     margin-bottom: 0.5rem;
-    color: var(--white);
 }
 
 .social-links {
@@ -467,25 +355,13 @@ footer {
 
 .social-links a {
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
     padding: 0.4rem;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: background-color 0.2s ease;
-}
-
-.social-links a:hover {
-    background-color: var(--primary-color);
+    background-color: var(--overlay);
 }
 
 .social-links img {
     width: 24px;
     height: 24px;
     filter: brightness(0) invert(1);
-}
-
-.footer-bottom p {
-    margin: 0.25rem 0;
-    opacity: 0.9;
 }
