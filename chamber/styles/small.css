@@ -24,7 +24,7 @@ body {
     min-height: 100vh;
 }
 
-/* Header & Logo Styling */
+/* Header & Navigation */
 header {
     background-color: var(--primary-color);
     color: var(--white);
@@ -72,7 +72,6 @@ header {
     outline: 2px solid var(--white);
 }
 
-/* Navigation Menu */
 nav {
     display: none;
     position: absolute;
@@ -110,7 +109,7 @@ nav.open {
     color: var(--white);
 }
 
-/* Main & Hero */
+/* Main Layout & Hero */
 main {
     flex: 1;
     padding: 1.25rem;
@@ -119,19 +118,67 @@ main {
     margin: 0 auto;
 }
 
+.hero {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
 
 .hero-content h1 {
-    font-size: 1.85rem;
-    margin-bottom: 0.75rem;
-    font-weight: 700;
     font-size: 1.6rem;
+    font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--white);
 }
 
+.hero-content p {
+    font-size: 1.05rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+    opacity: 0.95;
+    color: var(--white);
+}
 
-/* Home Grid Cards */
+.cta-button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #2e7d32;
+}
+
+/* Home Grid & Cards */
 .home-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -168,7 +215,61 @@ main {
     border-bottom: none;
 }
 
+/* Weather & Forecast */
+.weather-temp {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
 
+.forecast-list {
+    list-style: none;
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.forecast-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* Spotlight Items */
+.spotlight-item {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #ccc;
+    text-align: center;
+}
+
+.spotlight-item img {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.4rem;
+}
+
+.spotlight-item h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.spotlight-item p {
+    font-size: 0.85rem;
+    margin: 0.2rem 0;
+}
+
+.spotlight-item a {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Directory Member Container & Controls */
 .menu-select {
     display: flex;
     justify-content: center;
@@ -190,18 +291,20 @@ main {
 }
 
 .menu-select button:hover {
-    background-color: var(--primary-color);
     transform: translateY(-1px);
 }
 
-
 .menu-select button.active {
     background-color: #1a1a1a;
-    color: var(--white);
     box-shadow: inset 0 2px 4px rgba(0,0,0,0.3);
 }
 
-/* --- GRID VIEW STYLING --- */
+#member-container {
+    min-height: 800px;
+    width: 100%;
+}
+
+/* Grid View */
 #member-container.grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -218,7 +321,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 420px; 
+    min-height: 420px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #member-container.grid .member-card:hover {
@@ -226,7 +330,14 @@ main {
     box-shadow: 0 6px 12px rgba(0,0,0,0.08);
 }
 
-
+#member-container.grid .member-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    background-color: var(--bg-color);
+}
 
 #member-container.grid h3 {
     font-size: 1.25rem;
@@ -239,7 +350,6 @@ main {
     margin: 0.3rem 0;
     color: var(--text-color);
 }
-
 
 #member-container.grid .membership {
     font-weight: 700;
@@ -267,8 +377,7 @@ main {
     background-color: var(--primary-color);
 }
 
-
-/* --- LIST VIEW STYLING --- */
+/* List View */
 #member-container.list {
     display: flex;
     flex-direction: column;
@@ -330,7 +439,7 @@ main {
     color: var(--primary-color);
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
     background-color: var(--primary-color);
     color: var(--white);
@@ -379,136 +488,4 @@ footer {
 .footer-bottom p {
     margin: 0.25rem 0;
     opacity: 0.9;
-}
-
-
-#member-container {
-    min-height: 800px; 
-    width: 100%;
-}
-
-#member-container.grid .member-img {
-    width: 100%;
-    height: 180px; 
-    object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 1rem;
-    background-color: var(--bg-color);
-}
-
-
-
-
-
-/* --- HTML Hero Image & Text Overlay Styling --- */
-.hero {
-    position: relative;
-    width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
-
-.hero-img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    display: block;
-}
-
-.hero-content {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85));
-    color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 1.5rem;
-}
-
-.hero-content p {
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
-    max-width: 550px;
-    color: var(--white);
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    opacity: 0.95;
-
-}
-
-.cta-button {
-    background-color: var(--secondary-color);
-    color: var(--white);
-    padding: 0.6rem 1.4rem;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: background-color 0.2s ease;
-}
-
-.cta-button:hover {
-    background-color: #2e7d32;
-}
-
-/* --- Weather & Forecast Styles --- */
-.weather-temp {
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin-top: 0.4rem;
-}
-
-.forecast-list {
-    list-style: none;
-    margin-top: 0.75rem;
-    padding-top: 0.5rem;
-    border-top: 1px solid #ddd;
-}
-
-.forecast-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.25rem 0;
-    font-size: 0.9rem;
-}
-
-/* --- Spotlight Card Styling --- */
-.spotlight-item {
-    margin-top: 1rem;
-    padding-top: 0.75rem;
-    border-top: 1px dashed #ccc;
-    text-align: center;
-}
-
-.spotlight-item img {
-    max-width: 80px;
-    height: auto;
-    object-fit: contain;
-    margin-bottom: 0.4rem;
-}
-
-.spotlight-item h3 {
-    font-size: 1rem;
-    color: var(--primary-color);
-}
-
-.spotlight-item p {
-    font-size: 0.85rem;
-    margin: 0.2rem 0;
-}
-
-.spotlight-item a {
-    display: inline-block;
-    margin-top: 0.3rem;
-    font-size: 0.85rem;
-    color: var(--primary-color);
-    font-weight: 700;
 }
