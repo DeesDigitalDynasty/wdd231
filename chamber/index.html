@@ -37,11 +37,11 @@
     <!-- JavaScript with defer -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
 </head>
 <body>
-    <header>
+   <header>
         <div class="logo-box">
-            
             <img src="images/cc_image.webp" alt="Ibadan Chamber of Commerce Logo" width="80" height="80" class="site-logo">
             <span class="site-name">Ibadan Chamber</span>
         </div>
@@ -57,7 +57,9 @@
     </header>
 
     <main>
+        <!-- Hero Section using an explicit HTML <img> tag -->
         <section class="hero">
+            <img src="images/hero-bg.webp" alt="Modern commercial skyline and logistics hub in Ibadan business district" width="1200" height="675" class="hero-img" fetchpriority="high">
             <div class="hero-content">
                 <h1>Welcome to Ibadan Chamber of Commerce</h1>
                 <p>Driving commerce, industrial innovation, and sustainable economic growth across Oyo State.</p>
@@ -65,7 +67,9 @@
             </div>
         </section>
 
+        <!-- Home Grid Cards -->
         <div class="home-grid">
+            <!-- Card 1: Upcoming Events -->
             <section class="card events">
                 <h2>Upcoming Events & Seminars</h2>
                 <ul>
@@ -74,20 +78,19 @@
                 </ul>
             </section>
 
+            <!-- Card 2: Current Weather -->
             <section class="card weather">
-                <h2>Current Weather</h2>
-                <div class="weather-widget">
-                    <p><strong>Ibadan, NG</strong></p>
-                    <p><span id="current-temp">31</span>&deg;C - Partly Cloudy</p>
+                <h2>Weather & Forecast</h2>
+                <div id="weather-container">
+                    <p id="current-weather">Loading weather data...</p>
+                    <div id="forecast-container"></div>
                 </div>
             </section>
 
-            <section class="card spotlight">
+            <!-- Card 3: Business Spotlight (Dynamically Populated via JS) -->
+            <section class="card spotlight" id="spotlight-container">
                 <h2>Business Spotlight</h2>
-                <div class="spotlight-content">
-                    <h3>Cocoa House Corporate Suites</h3>
-                    <p>Leading commercial infrastructure provider supporting financial institutions and tech startups in the heart of Dugbe.</p>
-                </div>
+                <!-- JavaScript will inject 2-3 Gold/Silver member spotlights here -->
             </section>
         </div>
     </main>

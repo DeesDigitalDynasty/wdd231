@@ -119,15 +119,7 @@ main {
     margin: 0 auto;
 }
 
-.hero {
-    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85)), url('../images/hero-bg.webp') center/cover no-repeat;
-    color: var(--bg-color);
-    padding: 3.5rem 1.5rem;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-}
+
 
 .hero-content h1 {
     font-size: 1.85rem;
@@ -424,4 +416,120 @@ footer {
     border-radius: 6px;
     margin-bottom: 1rem;
     background-color: var(--bg-color);
+}
+
+
+
+
+
+/* --- HTML Hero Image & Text Overlay Styling --- */
+.hero {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(14, 59, 44, 0.85), rgba(14, 59, 44, 0.85));
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: var(--white);
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+    max-width: 550px;
+    color: var(--white);
+}
+
+.cta-button {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #2e7d32;
+}
+
+/* --- Weather & Forecast Styles --- */
+.weather-temp {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 0.4rem;
+}
+
+.forecast-list {
+    list-style: none;
+    margin-top: 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #ddd;
+}
+
+.forecast-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+/* --- Spotlight Card Styling --- */
+.spotlight-item {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px dashed #ccc;
+    text-align: center;
+}
+
+.spotlight-item img {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 0.4rem;
+}
+
+.spotlight-item h3 {
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.spotlight-item p {
+    font-size: 0.85rem;
+    margin: 0.2rem 0;
+}
+
+.spotlight-item a {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    color: var(--primary-color);
+    font-weight: 700;
 }

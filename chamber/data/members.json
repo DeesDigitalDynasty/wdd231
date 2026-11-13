@@ -1,8 +1,8 @@
 {
   "members": [
     {
-      "name": "Cocoa House Corporate Center",
-      "representative": "Chief Adebayo Ojo",
+      "name": "Chief Adebayo Ojo",
+      "representative": "",
       "role": "Managing Director",
       "address": "Dugbe Commercial District, Ibadan",
       "phone": "+234 802 123 4567",
@@ -12,8 +12,8 @@
       "membershipLevel": "Gold"
     },
     {
-      "name": "Bodija Tech & Innovation Hub",
-      "representative": "Dr. Folake Johnson",
+      "name": "Dr. Folake Johnson",
+      "representative": "",
       "role": "Lead Executive Officer",
       "address": "Bodija Housing Estate, Ibadan",
       "phone": "+234 803 987 6543",
@@ -23,8 +23,8 @@
       "membershipLevel": "Silver"
     },
     {
-      "name": "Gbagi Apex Textile Merchants",
-      "representative": "Alhaji Ibrahim Gbagi",
+      "name": "Alhaji Ibrahim Gbagi",
+      "representative": "",
       "role": "Association President",
       "address": "Gbagi International Market, Ibadan",
       "phone": "+234 805 111 2233",
@@ -34,8 +34,8 @@
       "membershipLevel": "Non-Profit"
     },
     {
-      "name": "Agodi Gardens & Leisure Resort",
-      "representative": "Mrs. Titilayo Adeleke",
+      "name": "Mrs. Titilayo Adeleke",
+      "representative": "",
       "role": "Operations Director",
       "address": "Parliament Road, Old Bodija, Ibadan",
       "phone": "+234 807 444 5566",
@@ -45,8 +45,8 @@
       "membershipLevel": "Silver"
     },
     {
-      "name": "Mapo Heritage & Civic Services",
-      "representative": "Hon. Olumide Bankole",
+      "name": "Hon. Olumide Bankole",
+      "representative": "",
       "role": "Public Relations Lead",
       "address": "Mapo Hill, Ibadan",
       "phone": "+234 801 333 7788",
@@ -56,8 +56,8 @@
       "membershipLevel": "Gold"
     },
     {
-      "name": "Iwo Road Logistics & Transport Union",
-      "representative": "Mr. Emeka Okafor",
+      "name": "Mr. Emeka Okafor",
+      "representative": "",
       "role": "Logistics Coordinator",
       "address": "Iwo Road Interchange, Ibadan",
       "phone": "+234 809 222 9900",
@@ -67,8 +67,8 @@
       "membershipLevel": "Non-Profit"
     },
     {
-      "name": "Ring Road Financial Exchange",
-      "representative": "Ms. Zainab Bello",
+      "name": "Ms. Zainab Bello",
+      "representative": "",
       "role": "Chief Financial Officer",
       "address": "Ring Road, Ibadan",
       "phone": "+234 806 777 8899",
