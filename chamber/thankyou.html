@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received - Ibadan Chamber of Commerce</title>
+    <link rel="icon" href="../ibadan-chamber-favicon.ico">
+    <meta name="description" content="Confirmation page for your Ibadan Chamber of Commerce membership application.">
+    <meta name="author" content="Oludayo Oluboyede">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img src="images/cc_image.webp" alt="Ibadan Chamber of Commerce Logo" width="44" height="44" class="site-logo">
+            <span class="site-name">Ibadan Chamber</span>
+        </div>
+        <button id="menu-button" aria-label="Open Navigation Menu">&#9776;</button>
+        <nav id="animate-nav">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="thankyou-box">
+            <h1>Thank You for Applying</h1>
+            <p>We have received your membership application with the Ibadan Chamber of Commerce. Here are the required details you submitted:</p>
+            <dl id="application-summary" class="summary-list"></dl>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Ibadan Chamber of Commerce</h3>
+            <p>Dugbe Commercial District</p>
+            <p>Ibadan, Oyo State, Nigeria</p>
+            <p>info@ibadancc.org | +234 800 555 1234</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <img src="../images/linkedin.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <img src="../images/github.svg" alt="" width="24" height="24">
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+                <img src="../images/twitter.svg" alt="" width="24" height="24">
+            </a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentyear"></span> Oludayo Oluboyede • Ibadan Chamber of Commerce Project</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

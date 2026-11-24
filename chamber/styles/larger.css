@@ -77,3 +77,21 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
+
+
+
+
+@media (min-width: 768px) {
+    .join-layout {
+        display: grid;
+        grid-template-columns: 1.35fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .summary-list {
+        grid-template-columns: minmax(180px, 240px) 1fr;
+        align-items: baseline;
+    }
+}
